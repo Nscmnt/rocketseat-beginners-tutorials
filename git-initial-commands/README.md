@@ -6,6 +6,15 @@ git é uma ferramenta de versionamento de código, onde você consegue realizar 
 
 ## <center> Principais comando git </center>
 
+Após realizar a instalação do git em sua máquina utilize os primeiros comandos para configurar seu usuário e email.
+
+```
+git config --global user.name (yourName)
+
+git config --global user.email (yourEmail)
+
+```
+
 ```
 git init | inicializa um repositório vazio na
 
