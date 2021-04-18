@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumindo API</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      color: white;
+      background-color: rgb(24, 22, 22);
+    }
+    main {
+      width: 500px;
+      height: 300px;
+
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+
+      border-radius: 10px;
+
+      padding: 20px;
+
+      background-color: rgb(153, 51, 26);
+    }
+
+    input {
+      width: 50%;
+      text-align: center;
+
+      padding: 10px 25px;
+      font-size: 1.2rem;
+
+      border: none;
+      outline: none;
+      margin-bottom: 15px;
+      border-radius: 5px;
+
+      background-color: #fff;
+
+      cursor: pointer;
+    }
+
+    main ul {
+      margin: 0;
+      padding: 0;
+
+      width: 100%;
+      text-align: center;
+    }
+
+    ul li {
+      list-style: none;
+      color: blanchedalmond;
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <main>
+      <input onclick="getContent()" type="button" value="Buscar Usuários" />
+      <ul></ul>
+    </main>
+    <script>
+      async function getContent() {
+        try {
+          const response = await fetch("http://localhost:4567");
+          const data = await response.json();
+          show(data);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      function show(users) {
+        let listUsers = "";
+        users.forEach((user) => {
+          listUsers += `<li> ${user.name} </li>`;
+        });
+        document.querySelector("ul").innerHTML = listUsers;
+      }
+    </script>
+  </body>
+</html>
