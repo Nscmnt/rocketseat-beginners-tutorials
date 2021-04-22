@@ -4,4 +4,4 @@ Buscando imagens de uma API externa e guardando imagens favoritas no localStorag
 
 </br> <hr>
 
-![images gif](./.github/images.gif)
+![images gif](./.screenshot/images.gif)

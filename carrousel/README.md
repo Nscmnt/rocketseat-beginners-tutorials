@@ -4,4 +4,4 @@ Criando um carrousel com alteração de imagens com scroll do mouse, vídeo util
 
 </br> <hr>
 
-![carrousel gif](./.github/carrousel.gif)
+![carrousel gif](./.screenshot/carrousel.gif)

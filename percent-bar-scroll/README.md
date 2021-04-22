@@ -4,4 +4,4 @@ Criação de uma barra top fixa, que apresenta um feedback visual do quanto do p
 
 </br> <hr>
 
-![barra percentual gif](./.github/scroll-top.gif)
+![barra percentual gif](./.screenshot/scroll-top.gif)

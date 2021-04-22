@@ -4,4 +4,4 @@ SlideShow simples para estudo de alteração de class com posicionamento absluto
 
 </br> <hr>
 
-![slide gif](./.github/slideShow.gif)
+![slide gif](./.screenshot/slideShow.gif)

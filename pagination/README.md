@@ -4,4 +4,4 @@ Criação da logica de uma paginação com controle de limite de itens por paixa
 
 </br> <hr>
 
-![paginação gif](./.github/pagination.gif)
+![paginação gif](./.screenshot/pagination.gif)

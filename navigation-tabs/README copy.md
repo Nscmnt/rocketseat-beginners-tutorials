@@ -4,4 +4,4 @@ Criando uma navegação entre tabs, código seguindo o tutorial - [_Navegação 
 
 </br> <hr>
 
-![navegação entre tabs gif](./.github/tabs.gif)
+![navegação entre tabs gif](./.screenshot/tabs.gif)

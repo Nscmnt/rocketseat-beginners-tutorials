@@ -4,4 +4,4 @@ Consumindo API criada no backend que essa condume outra api para buscar usuário
 
 </br> <hr>
 
-![buscar usuario gif](./.github/buscar.gif)
+![buscar usuario gif](./.screenshot/buscar.gif)

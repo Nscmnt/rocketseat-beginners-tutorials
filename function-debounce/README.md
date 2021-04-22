@@ -4,4 +4,4 @@ Função debounce utilizando JavaScript puro, função responsavel por atenuar q
 
 </br> <hr>
 
-![debounce gif](./.github/debounce.gif)
+![debounce gif](./.screenshot/debounce.gif)

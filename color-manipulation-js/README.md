@@ -4,4 +4,4 @@ Manipulando luminosidade de uma cor via JS, realizando ao final o desafio deixad
 
 </br> <hr>
 
-![darkMode gif](./.github/luminosity.gif)
+![darkMode gif](./.screenshot/luminosity.gif)

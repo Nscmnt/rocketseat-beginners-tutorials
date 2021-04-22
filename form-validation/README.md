@@ -4,4 +4,4 @@ Criando validações de campos e mensagens personalizadas para indicar o erro, u
 
 </br> <hr>
 
-![debounce gif](./.github/form-validação.gif)
+![debounce gif](./.screenshot/form-validação.gif)

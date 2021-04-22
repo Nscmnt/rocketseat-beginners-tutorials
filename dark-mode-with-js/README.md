@@ -4,4 +4,4 @@ DarkMode utilizando JavaScript com manipulação de variaveis CSS, vídeo utiliz
 
 </br> <hr>
 
-![darkMode gif](./.github/darkMode.gif)
+![darkMode gif](./.screenshot/darkMode.gif)

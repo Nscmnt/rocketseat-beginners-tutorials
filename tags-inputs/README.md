@@ -4,4 +4,4 @@ Criação de tags via input, realizei um pequena aleração no código original 
 
 </br> <hr>
 
-![tags input gif](./.github/tags.gif)
+![tags input gif](./.screenshot/tags.gif)
