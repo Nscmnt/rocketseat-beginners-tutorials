@@ -1,23 +1,24 @@
-const express = require("express");
+const express = require('express');
+
 const app = express();
-const data = require("./data.json");
+const data = require('./data.json');
 
 app.use(express.json());
 
-app.get("/clients", (req, res) => {
+app.get('/clients', (req, res) => {
   res.json(data);
 });
 
-app.get("/clients/:id", (req, res) => {
+app.get('/clients/:id', (req, res) => {
   const { id } = req.params;
-  const client = data.find((cli) => cli.id == id);
+  const client = data.find((cli) => cli.id === id);
 
   if (!client) return res.status(204).json();
 
   res.json(client);
 });
 
-app.post("/clients", (req, res) => {
+app.post('/clients', (req, res) => {
   const { name, email } = req.body;
 
   console.log(req.body);
@@ -27,9 +28,9 @@ app.post("/clients", (req, res) => {
   res.json({ name, email });
 });
 
-app.put("/clients/:id", (req, res) => {
+app.put('/clients/:id', (req, res) => {
   const { id } = req.params;
-  const client = data.find((cli) => cli.id == id);
+  const client = data.find((cli) => cli.id === id);
 
   if (!client) return res.status(204).json();
 
@@ -40,16 +41,16 @@ app.put("/clients/:id", (req, res) => {
   res.json(client);
 });
 
-app.delete("/clients/:id", (req, res) => {
+app.delete('/clients/:id', (req, res) => {
   const { id } = req.params;
 
-  const client = data.find((cli) => cli.id == id);
+  const client = data.find((cli) => cli.id === id);
 
   if (!client) return res.status(204).json();
 
-  const resultDelete = data.filter((cli) => cli.id != id);
+  const resultDelete = data.filter((cli) => cli.id !== id);
 
   res.json(resultDelete);
 });
 
-app.listen(3000, () => console.log("server is running"));
+app.listen(3000, () => console.log('server is running'));
