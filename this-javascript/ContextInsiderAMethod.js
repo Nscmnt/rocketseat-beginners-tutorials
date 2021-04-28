@@ -1,6 +1,6 @@
 // Não pega o escopo externo
 
-this.name = "joão";
+this.name = "João";
 
 const dev = {
   name: "Maria",

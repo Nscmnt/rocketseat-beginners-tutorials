@@ -3,32 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>This</title>
   </head>
   <body>
+    <input type="text" name="text" />
+    <p></p>
     <script>
       // No browser o this golbal é o objeto window
       // o 'use strict' padroniza contexto e evita alguns prblemas
       console.log(this); // window
 
-      this.name = "Jorge";
+      // this.name = "Jorge";
 
-      function sayMyName() {
-        name = "Anna";
+      // function sayMyName() {
+      //   this.name = "Anna";
 
-        return name;
-      }
+      //   return name;
+      // }
 
-      console.log(sayMyName()); // Anna / respeitando o scope local
+      // console.log(sayMyName()); // Anna / respeitando o scope local
 
-      const user = {
-        name: "Judivam",
-        sayMyName() {
-          console.log(this.name); // "Judivam", caso o objeto não possua a prorpriedade name retorna underfined e não sobe para buscar em outro escopo
-        },
-      };
+      // const user = {
+      //   name: "Judivam",
+      //   sayMyName() {
+      //     console.log(this.name); // "Judivam", caso o objeto não possua a propriedade name retorna underfined e não sobe para buscar em outro escopo
+      //   },
+      // };
 
-      user.sayMyName();
+      // user.sayMyName();
     </script>
   </body>
 </html>
